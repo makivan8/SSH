@@ -58,11 +58,11 @@ public class Main{
 								block.Block(s[15]);
 								countMap.put(s[15], 0);
 
-								SendEmail mail = new SendEmail();
-								mail.Mail(s[15], s[3]);
-								
 								UnBlockIp unblockIp = new UnBlockIp();
 								unblockIp.IpList(s[15], s[3]);
+								
+								SendEmail mail = new SendEmail();
+								mail.Mail(s[15], s[3]);
     							}
 							UnBlockIp.Run();
 						}
